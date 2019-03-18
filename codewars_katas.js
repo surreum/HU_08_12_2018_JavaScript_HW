@@ -1,3 +1,25 @@
+// Sorting array and delete equal chars;
+var uniqueInOrder=function(iterable){
+  var array = iterable.toString();
+  array = iterable;
+  var newArr = [];
+  for (let i=0; i<array.length; i++)  {
+      if (array[i]!==array[i+1]){
+          newArr.push(array[i]);
+          console.log(newArr); 
+      }
+      }
+      return newArr; 
+  }               
+
+
+
+console.log(uniqueInOrder([1,2,2,3,3]));
+console.log(uniqueInOrder('AAAABBBCCDAABBB'));
+console.log(uniqueInOrder('ABBCcAD'));
+
+
+
 // First Kata Validate PIN My solution:
 function validatePIN (pin) {
     if (pin.match(/[^\d]/)){
@@ -66,3 +88,17 @@ String.prototype.toJadenCase = function (str) {
 
 console.log(String.prototype.toJadenCase('How can mirrors be real if our eyes aren\'t real'));
 
+
+
+lеt a = 90100
+function my(){
+  if (false)
+    lеt a = 1;
+  else {
+    lеt b = 2;
+  }
+ 
+  alеrt(a); // 90100 
+  console.log(b); 
+} 
+my()

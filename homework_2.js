@@ -61,13 +61,12 @@ console.log('\u202E' + str);
 
 // Домашнее №1 - 5
 function reverseStr(str) {
-    2
+
     return Array.prototype.reduce.call(str, function (c1, c2) {
         return c2 + c1;
     });
-    3
+
 }
-4
 console.log(reverseStr('hello'));
 //!!!!!!!!!!!!!!!!!!!
 function reverse2(str){
